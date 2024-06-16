@@ -13,7 +13,8 @@ const UserProfileScreen = () => {
   const [userWallets, setUserWallets] = useState([]);
   const [authToken, setAuthToken] = useState("");
   const navigation = useNavigation();
-  const idToken = "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"; // Replace with the actual ID token
+  const idToken =
+    "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36kArCjNKFqJjBLrdjx8IvhNeXQZVwAQJs3V_dw0DrQ"; // Replace with the actual ID token
   const oktoClientApiKey = "2272ebbe-9201-424c-a2d7-5e7b903e0bea";
   const API_BASE_URL = "https://sandbox-api.okto.tech";
 

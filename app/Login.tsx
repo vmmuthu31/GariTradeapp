@@ -11,8 +11,12 @@ WebBrowser.maybeCompleteAuthSession();
 const LoginScreen = () => {
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest(
     {
-      clientId:
-        "948097968037-ropins17kslkieuuvv751sm1jq6jj481.apps.googleusercontent.com", // Use android client ID here
+      androidClientId:
+        "948097968037-ropins17kslkieuuvv751sm1jq6jj481.apps.googleusercontent.com",
+      iosClientId:
+        "948097968037-ropins17kslkieuuvv751sm1jq6jj481.apps.googleusercontent.com",
+      webClientId:
+        "948097968037-ropins17kslkieuuvv751sm1jq6jj481.apps.googleusercontent.com",
     },
     { native: "myapp" } // Use your scheme here
   );

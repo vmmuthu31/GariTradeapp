@@ -13,6 +13,9 @@ const api = axios.create({
   },
 });
 
+const Google_Token =
+  "0ATx3LY4pLoNwkxLrFvOYDPgfaUl36kArCjNKFqJjBLrdjx8IvhNeXQZVwAQJs3V_dw0DrQ";
+
 export const authenticate = async (idToken) => {
   const response = await api.post("/api/v1/authenticate", {
     id_token: idToken,
